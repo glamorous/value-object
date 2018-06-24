@@ -1,0 +1,30 @@
+{
+    "name": "glamorous/value-object",
+    "description": "Interface to have ValueObjects in your application. An Enum implementing this interface is also available.",
+    "type": "library",
+    "require": {
+        "php": ">=7.0",
+        "myclabs/php-enum": "dev-master"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^7.2"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Jonas De Smet",
+            "email": "jonas@glamorous.be"
+        }
+    ],
+    "minimum-stability": "dev",
+    "autoload": {
+        "psr-4": {
+            "Glamroous\\ValueObjects\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Glamroous\\Tests\\ValueObjects\\": "tests/"
+        }
+    }
+}
