@@ -19,12 +19,12 @@
     "minimum-stability": "dev",
     "autoload": {
         "psr-4": {
-            "Glamroous\\ValueObjects\\": "src/"
+            "Glamorous\\ValueObjects\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Glamroous\\Tests\\ValueObjects\\": "tests/"
+            "Glamorous\\Tests\\ValueObjects\\": "tests/"
         }
     }
 }
