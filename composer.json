@@ -26,5 +26,8 @@
         "psr-4": {
             "Glamorous\\Tests\\": "tests/"
         }
+    },
+    "scripts": {
+        "test": "phpunit"
     }
 }
