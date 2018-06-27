@@ -33,7 +33,7 @@ abstract class Enum extends VendorEnum implements ValueObject
      */
     public function equalsTo(ValueObject $object): bool
     {
-        if (!$object instanceof self) {
+        if (get_class($this) !== get_class($object)) {
             return false;
         }
 
