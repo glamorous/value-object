@@ -1,18 +1,23 @@
-<?xml version="1.0" encoding="utf-8"?>
-<phpunit backupGlobals="false"
+<?xml version="1.0" encoding="UTF-8"?>
+<phpunit bootstrap="vendor/autoload.php"
+         backupGlobals="false"
          backupStaticAttributes="false"
          colors="true"
-         cacheTokens="false"
+         verbose="true"
          convertErrorsToExceptions="true"
          convertNoticesToExceptions="true"
          convertWarningsToExceptions="true"
          processIsolation="false"
          stopOnFailure="false"
-         cacheResult="false"
-         bootstrap="./vendor/autoload.php">
+         cacheResult="false">
     <testsuites>
         <testsuite name="PHP ValueObject Test Suite">
-            <directory suffix=".php">./tests</directory>
+            <directory>tests</directory>
         </testsuite>
     </testsuites>
+    <filter>
+        <whitelist>
+            <directory suffix=".php">src/</directory>
+        </whitelist>
+    </filter>
 </phpunit>
