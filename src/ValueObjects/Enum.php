@@ -31,7 +31,7 @@ abstract class Enum extends VendorEnum implements ValueObject
      *
      * @return bool
      */
-    public function isTheSameAs(ValueObject $object): bool
+    public function equalsTo(ValueObject $object): bool
     {
         if (!$object instanceof self) {
             return false;
