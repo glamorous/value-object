@@ -1,4 +1,11 @@
-# ValueObject
+# Value Object
+
+[![Build Status](https://travis-ci.org/glamorous/value-object.svg?branch=master)](https://travis-ci.org/glamorous/value-object)
+[![Latest Stable Version](https://poser.pugx.org/glamorous/value-object/v/stable)](https://packagist.org/packages/glamorous/value-object)
+[![Total Downloads](https://poser.pugx.org/glamorous/value-object/downloads)](https://packagist.org/packages/glamorous/value-object)
+[![Latest Unstable Version](https://poser.pugx.org/glamorous/value-object/v/unstable)](https://packagist.org/packages/glamorous/value-object)
+[![License](https://poser.pugx.org/glamorous/value-object/license)](https://packagist.org/packages/glamorous/value-object)
+
 PHP Interface to create value objects to use in your project. Abstract Enum class available that uses the same interface.
 
 ## Why?
