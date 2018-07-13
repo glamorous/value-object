@@ -37,6 +37,6 @@ abstract class Enum extends VendorEnum implements ValueObject
             return false;
         }
 
-        return $this->equals($object);
+        return ($object instanceof VendorEnum) ? $this->equals($object) : false;
     }
 }

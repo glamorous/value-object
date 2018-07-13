@@ -1,0 +1,26 @@
+parameters:
+    hide_circumvention_tip: true
+    tasks:
+        composer:
+          strict: true
+        composer_require_checker: ~
+        git_blacklist:
+          keywords:
+              - "die("
+              - "var_dump("
+        git_commit_message:
+          enforce_capitalized_subject: false
+          max_body_width: 250
+          max_subject_width: 72
+        jsonlint:
+          detect_key_conflicts: true
+        phpcpd: ~
+        phpcs: ~
+        phplint: ~
+        phpmd: ~
+        phpmnd: ~
+        phpstan:
+          level: 7
+        phpunit: ~
+        securitychecker: ~
+        yamllint: ~

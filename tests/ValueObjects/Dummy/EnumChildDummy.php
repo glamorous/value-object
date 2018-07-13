@@ -2,4 +2,6 @@
 
 namespace Glamorous\Tests\ValueObjects\Dummy;
 
-class EnumChildDummy extends EnumDummy {}
+class EnumChildDummy extends EnumDummy
+{
+}

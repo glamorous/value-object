@@ -5,6 +5,7 @@
 [![PHP Version](https://img.shields.io/packagist/php-v/glamorous/value-object.svg)]()
 [![Build Status](https://img.shields.io/travis/glamorous/value-object.svg)](https://travis-ci.org/glamorous/value-object)
 [![Codecov](https://img.shields.io/codecov/c/github/glamorous/value-object.svg)](https://codecov.io/gh/glamorous/value-object)
+[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/glamorous/value-object/badges/quality-score.png)](https://scrutinizer-ci.com/g/glamorous/value-object/)
 [![Total Downloads](https://img.shields.io/packagist/dt/glamorous/value-object.svg)](https://packagist.org/packages/glamorous/value-object)
 [![GitHub issues](https://img.shields.io/github/issues/glamorous/value-object.svg)](https://github.com/glamorous/value-object/issues)
 
@@ -85,6 +86,10 @@ Please see [CHANGELOG](CHANGELOG.md) for more information what has changed recen
 ``` bash
 $ composer test
 ```
+
+## Contributing
+
+Please see [CONTRIBUTING](CONTRIBUTING.md) for details. To see a list of the contributors: [all contributors](../../contributors).
 
 ## License
 

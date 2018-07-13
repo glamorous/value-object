@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<ruleset name="PHP_CodeSniffer">
+    <description>Coding standards</description>
+
+    <!-- Include the whole PSR2 standard -->
+    <rule ref="PSR2"/>
+
+    <!-- Include some sniffs from other standards that don't conflict with PSR2 -->
+    <rule ref="Generic.Commenting.DocComment"/>
+    <rule ref="Squiz.Commenting.BlockComment"/>
+    <rule ref="Squiz.Commenting.DocCommentAlignment"/>
+    <rule ref="Squiz.Commenting.EmptyCatchComment"/>
+    <rule ref="Squiz.Commenting.FunctionCommentThrowTag"/>
+    <rule ref="Squiz.Commenting.InlineComment"/>
+    <rule ref="Squiz.Commenting.LongConditionClosingComment"/>
+    <rule ref="Squiz.Commenting.PostStatementComment"/>
+    <rule ref="Squiz.Commenting.VariableComment"/>
+    <rule ref="Generic.Formatting.SpaceAfterCast"/>
+
+    <rule ref="PSR1.Methods.CamelCapsMethodName">
+        <exclude-pattern>tests/*</exclude-pattern>
+    </rule>
+</ruleset>

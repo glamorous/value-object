@@ -10,17 +10,15 @@ use PHPUnit\Framework\TestCase;
 class EnumTest extends TestCase
 {
     /**
-     * @var Enum Dummy Enum for testing, used in every test.
+     * Dummy Enum for testing, used in every test.
+     *
+     * @var Enum
      */
     private $enum;
 
-    /**
-     * {@inheritdoc}
-     */
     public function setUp()
     {
         parent::setUp();
-        $this->value = 1;
 
         $this->enum = new EnumDummy(EnumDummy::FOO);
     }
@@ -51,7 +49,7 @@ class EnumTest extends TestCase
 
     public function test_if_to_string_calls_the_parent_and_returns_a_string()
     {
-        $this->assertTrue(is_string((string)$this->enum));
+        $this->assertTrue(is_string((string) $this->enum));
     }
 
     public function test_that_value_is_returned_for_to_native()
