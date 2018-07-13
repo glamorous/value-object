@@ -39,6 +39,15 @@
         }
     },
     "scripts": {
-        "test": "phpunit"
+        "test": "phpunit",
+        "post-root-package-install": [
+            "php ./vendor/bin/grumphp git:init"
+        ],
+        "post-create-project-cmd": [
+            "php ./vendor/bin/grumphp git:init"
+        ],
+        "post-install-cmd": [
+            "php ./vendor/bin/grumphp git:init"
+        ]
     }
 }
