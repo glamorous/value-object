@@ -16,14 +16,14 @@ class EnumTest extends TestCase
      */
     private $enum;
 
-    public function setUp()
+    public function setUp(): void
     {
         parent::setUp();
 
         $this->enum = new EnumDummy(EnumDummy::FOO);
     }
 
-    public function test_that_two_enums_with_same_values_are_equal()
+    public function test_that_two_enums_with_same_values_are_equal(): void
     {
         $equalEnum = new EnumDummy(EnumDummy::FOO);
         $this->assertTrue($this->enum->equalsTo($equalEnum));
@@ -31,7 +31,7 @@ class EnumTest extends TestCase
         $this->assertEquals($this->enum, $equalEnum);
     }
 
-    public function test_that_two_enums_from_same_class_with_different_values_are_not_equal()
+    public function test_that_two_enums_from_same_class_with_different_values_are_not_equal(): void
     {
         $notEqualEnum = new EnumDummy(EnumDummy::BAR);
         $this->assertFalse($this->enum->equalsTo($notEqualEnum));
@@ -39,7 +39,7 @@ class EnumTest extends TestCase
         $this->assertNotEquals($this->enum, $notEqualEnum);
     }
 
-    public function test_that_a_another_enum_with_same_value_is_not_equal()
+    public function test_that_a_another_enum_with_same_value_is_not_equal(): void
     {
         $notEqualEnum = new EnumChildDummy(EnumDummy::FOO);
         $this->assertFalse($this->enum->equalsTo($notEqualEnum));
@@ -47,12 +47,12 @@ class EnumTest extends TestCase
         $this->assertNotEquals($this->enum, $notEqualEnum);
     }
 
-    public function test_if_to_string_calls_the_parent_and_returns_a_string()
+    public function test_if_to_string_calls_the_parent_and_returns_a_string(): void
     {
         $this->assertTrue(is_string((string) $this->enum));
     }
 
-    public function test_that_value_is_returned_for_to_native()
+    public function test_that_value_is_returned_for_to_native(): void
     {
         $this->assertEquals($this->enum->toNative(), EnumDummy::FOO);
         $this->assertEquals($this->enum->getValue(), EnumDummy::FOO);

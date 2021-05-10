@@ -1,4 +1,4 @@
-parameters:
+grumphp:
     hide_circumvention_tip: true
     tasks:
         composer:
@@ -22,5 +22,5 @@ parameters:
         phpstan:
           level: 7
         phpunit: ~
-        securitychecker: ~
+        securitychecker_enlightn: ~
         yamllint: ~
